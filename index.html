@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Mask Grounding is an innovative auxiliary task that can be added during training to improve model performance for Referring Image Segmentation (RIS)">
+  <meta name="keywords" content="VATEX, RIS, Vision-Aware Text Features, Referring Image Segmentation">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Instance-Aware Generalized Referring Expression Segmentation</title>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+
+  <style>
+    .abstract-container {
+      animation: fadeIn 1s ease-in;
+      background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf1 100%);
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      margin: 2rem 0;
+    }
+
+    .highlight-box {
+      background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+      padding: 1.5rem;
+      margin: 2rem 0;
+      border-left: 5px solid #4a90e2;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    .highlight-box:hover {
+      transform: translateY(-5px);
+    }
+
+    .feature-box {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+    }
+
+    .feature-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    }
+
+    .features-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+
+    @media (max-width: 768px) {
+      .features-container {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .object-feature {
+      background: linear-gradient(135deg, #fff5f0 0%, #fff 100%);
+      border-left: 4px solid #C55A11;
+    }
+
+    .context-feature {
+      background: linear-gradient(135deg, #f0f5ff 0%, #fff 100%);
+      border-left: 4px solid #0570C0;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-spaced is-1 publication-title">Instance-Aware Generalized Referring Expression Segmentation</h1>
+          <h2 class="subtitle is-3" style="color: #ff3860; margin-bottom: 12px; margin-top: -12px; font-weight: bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.2); animation: fadeIn 1s ease-out;">arXiv</h2>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://erongyen.me">E-Ro Nguyen</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://hieulem.github.io/">Hieu Le</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=BxbKTYkAAAAJ&hl=en">Dimitris Samaras</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="http://michaelryoo.com/">Michael Ryoo</a><sup>1</sup>,
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Stony Brook University, New York, USA</span>
+            <span class="author-block"><sup>2</sup>EPFL</span>
+          </div>
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              
+              <!-- <span class="link-block">
+                <a href="https://arxiv.org/"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper (Coming Soon)</span>
+                </a>
+              </span> -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2404.08590"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/nero1342/InstAlign"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="./static/images/teaser.png" alt="empty">
+      <h2 class="subtitle has-text-centered">
+        <br>
+        <span>
+          Previous GRES methods typically output a single foreground mask in an end-to-end manner, struggling with complex cases involving multiple referred object instances. 
+          In contrast, our proposed method automatically localizes relevant object instances associated with different parts of the input prompt before aggregating them to produce the final mask.
+          <!-- <span style="color: #C55A11">Object understanding</span> and 
+          <span style="color: #0570C0">Context understanding</span> 
+          are required to tackle the challenge of complex and ambiguous language expression. -->
+        </span>
+      </h2>
+      <h2 class="subtitle has-text-centered">
+        <br>
+        <strong style="color: orange;font-size: 1.2em">TL;DR:</strong>
+        <!-- <i><span style="font-size: 1.0em; font-weight: bold">VATEX</span> is a novel method for referring image segmentation that leverages vision-aware text features to improve text understanding. By decomposing language cues into object and context understanding, the model can better localize objects and interpret complex sentences, leading to significant performance gains. -->
+        </i>
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3 animate__animated animate__fadeIn">Abstract</h2>
+        <div class="content has-text-justified">
+          <div class="abstract-container">
+            <p>
+              Recent works on Generalized Referring Expression Segmentation (GRES) struggle with handling complex expressions referring to multiple distinct objects. 
+              This is because these methods typically employ an end-to-end foreground-background segmentation and lack a mechanism to explicitly differentiate and associate different object instances to the text query. 
+            </p>
+            
+
+            <div class="highlight-box">
+              <p style="font-weight: bold; color: #333; font-size: 1.2em; margin: 0;">
+                To this end, we propose InstAlign, a method that incorporates. 
+                <span style="color: #C55A11; font-weight: 700;">object-level reasoning</span> into the segmentation process.
+              </p>
+            </div>
+            
+            <div class="highlight-box">
+              <p style="font-weight: bold; color: #333; font-size: 1.2em; margin: 0;">
+                Our model leverages both text and image inputs to extract a set of object-level tokens that capture both the semantic information in the input prompt and the objects within the image. 
+                By modeling the text-object alignment via instance-level supervision, each token uniquely represents an object segment in the image, while also aligning with relevant semantic information from the text. 
+              
+              </p>
+            </div>
+
+            <div style="background: #f8f9fa; padding: 1.5rem; border-radius: 8px; margin-top: 2rem;">
+              <p style="margin: 0;">
+                <span style="color: #2ea44f; font-weight: 600;">✨ Results:</span> 
+                Extensive experiments on the gRefCOCO and Ref-ZOM benchmarks demonstrate that our method significantly advances state-of-the-art performance, setting a new standard for precise and flexible GRES.
+                <br><br>
+                <span style="color: #0366d6; font-weight: 600;">🚀 Code Released:</span> 
+                Our code and pre-trained weights are available at <a href="https://github.com/nero1342/InstAlign" target="_blank" style="color: #0366d6; font-weight: 600;">https://github.com/nero1342/InstAlign</a>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+    
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            Thanks for the project template by <a href="https://github.com/itruonghai/VATEX"> VATEX</a>. 
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
