@@ -115,7 +115,7 @@
           <h2 class="subtitle is-3" style="color: #ff3860; margin-bottom: 12px; margin-top: -12px; font-weight: bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.2); animation: fadeIn 1s ease-out;">arXiv</h2>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://erongyen.me">E-Ro Nguyen</a><sup>1</sup>,
+              <a href="https://eronguyen.me">E-Ro Nguyen</a><sup>1</sup>,
             </span>
             <span class="author-block">
               <a href="https://hieulem.github.io/">Hieu Le</a><sup>2</sup>,
@@ -136,17 +136,17 @@
             <div class="publication-links">
               <!-- PDF Link. -->
               
-              <!-- <span class="link-block">
-                <a href="https://arxiv.org/"
+              <span class="link-block">
+                <a href="https://arxiv.org/pdf/2411.15087"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
                   </span>
-                  <span>Paper (Coming Soon)</span>
+                  <span>Paper</span>
                 </a>
-              </span> -->
+              </span>
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2404.08590"
+                <a href="https://arxiv.org/abs/2411.15087"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -190,7 +190,8 @@
       <h2 class="subtitle has-text-centered">
         <br>
         <strong style="color: orange;font-size: 1.2em">TL;DR:</strong>
-        <!-- <i><span style="font-size: 1.0em; font-weight: bold">VATEX</span> is a novel method for referring image segmentation that leverages vision-aware text features to improve text understanding. By decomposing language cues into object and context understanding, the model can better localize objects and interpret complex sentences, leading to significant performance gains. -->
+        <i><span style="font-size: 1.0em; font-weight: bold">InstAlign</span> is a novel instance-aware approach for Generalized Referring Expession Segmentation that incorporates the instance-level reasoning into segmentation process. By explicitly identifying and linking relevant objects to specific semantic entities of the input text, the model can effectively handles complex multi-object
+          scenarios, leading to significant performance gains.
         </i>
       </h2>
     </div>
@@ -243,7 +244,29 @@
     <!--/ Abstract. -->
     
   </div>
+
+
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="./static/images/qualitative.png" alt="empty">
+      <h2 class="subtitle has-text-centered">
+        <span class="dnerf">InstAlign</span> identifies relevant instances and merges them to produce the final accurate segmentation mask.
+      </h2>
+    </div>
+  </div>
 </section>
+
+<!--   
+<div class="container is-max-desktop">
+  <div class="hero-body">
+    <img src="./static/images/qualitative.png" alt="empty">
+    <h2 class="subtitle has-text-centered">
+      <span class="dnerf">InstAlign</span> aligns the object instances with .
+    </h2>
+  </div>
+</div> -->
+</section>
+
 
 <footer class="footer">
   <div class="container">
