@@ -21,15 +21,14 @@ Stony Brook University, University of North Carolina at Charlotte
 
 ## 🔥 Updates
 
-- **[2026]** Presented at the **CVPR 2026 Workshop: Pixel-level Video Understanding in the Wild**
-- **[Nov 2024]** Initial arXiv release.
-- **[2025]** Code released.
+- **[March 2026]** Accepted at **CVPR 2026 Workshop: Pixel-level Video Understanding in the Wild**
 
 ---
 
 ## 🔧 Code
 
 🚀 Code & pretrained checkpoints will be released soon!
+
 ## Citation
 
 If you find our work useful, please consider citing:
